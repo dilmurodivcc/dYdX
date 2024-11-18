@@ -1,0 +1,21 @@
+@import "./utils/variables";
+@import "./utils/mixing";
+@import "./base/reset";
+@import "./components/buttons";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./pages/funded";
+@import "./pages/discover";
+@import "./pages/with-img";
+@import "./pages/program";
+@import "./media/discoverRES";
+@import "./media/programRES";
+@import "./media/fundedRES";
+@import "./media/with-imgRES";
+
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
