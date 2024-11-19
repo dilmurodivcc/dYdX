@@ -1,21 +1,39 @@
 @import "../utils/variables";
 @import "../utils/mixing";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    max-width: 1230px;
-    margin: 0 auto;
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background-color: $background-primary;
+  color: $text-icon-secondary;
+  font-family: $font-family;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-a{
-    text-decoration: none;
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: $background-primary;
+
 }
-button{
-    border: none;
-    outline: none;
-    cursor: pointer;
+::-webkit-scrollbar-thumb{
+    background-color: $accent-brand;
+    border-radius: 5px;
 }
