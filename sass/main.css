@@ -96,12 +96,183 @@ button {
   background-color: #393953 !important;
 }
 
+.primary-btn.white {
+  background-color: #fff !important;
+  color: #6966ff !important;
+}
+
 a {
   font-family: "Space Mono", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: #c8c7d8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #1c1c28;
+  color: #c8c7d8;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
+.accordion-flush .accordion-item {
+  border-top: 0 !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  width: 808px;
+  border-bottom: 1px solid #393953;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+  background-color: transparent !important;
+  font-weight: 450 !important;
+  font-size: 18px !important;
+  line-height: 133% !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  height: 75px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.accordion-flush .accordion-item .accordion-button.first {
+  border-top: 1px solid #393953;
+}
+
+.accordion-flush .accordion-item .accordion-button.last {
+  border-bottom: 1px solid #393953;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: "-";
+  font-size: 25px;
+  color: #6966ff;
+  transform: scale(1.1) translate(0, 0) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.accordion-button::after {
+  background-image: none;
+  content: "+";
+  font-size: 24px;
+  color: #fff;
+  transform: translate(0, 0) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #1c1c28;
+  color: #c8c7d8;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
+.blue-content {
+  display: flex;
+  margin: 80px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 40px 0px;
+  width: 1224px;
+  height: 248px;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  background: linear-gradient(322deg, #6966ff 0%, rgba(105, 102, 255, 0.36) 100%);
+}
+.blue-content .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.blue-content h4 {
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+}
+.blue-content h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
 }
 
 * {
@@ -197,6 +368,49 @@ button {
 ::-webkit-scrollbar-thumb {
   background-color: #6966ff;
   border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 80px 0 40px 0;
+  position: relative;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+footer nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+footer .right,
+footer .left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+footer a {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+footer .grid-bck {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 792px;
+  z-index: -1;
+  background-image: url(../../assets/images/grid-top-reverse.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 * {
@@ -698,6 +912,7 @@ button {
   flex-direction: row;
   gap: 40px;
   position: relative;
+  margin-bottom: 80px;
 }
 .cards .container .cardd {
   background-color: #393953;
@@ -922,92 +1137,4 @@ button {
 ::-webkit-scrollbar-thumb {
   background-color: #6966ff;
   border-radius: 5px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1230px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-body {
-  background-color: #1c1c28;
-  color: #c8c7d8;
-  font-family: "Poppins", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-::-webkit-scrollbar {
-  width: 15px;
-  background-color: #1c1c28;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #6966ff;
-  border-radius: 5px;
-}
-
-.accordion-flush .accordion-item {
-  border-top: 0 !important;
-  box-shadow: none !important;
-  background-color: transparent !important;
-  width: 808px;
-  border-bottom: 1px solid #393953;
-}
-
-.accordion-flush .accordion-item .accordion-button {
-  background-color: transparent !important;
-  font-weight: 450 !important;
-  font-size: 18px !important;
-  line-height: 133% !important;
-  letter-spacing: -0.01em !important;
-  color: #fff !important;
-  box-shadow: none !important;
-  height: 75px;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.accordion-flush .accordion-item .accordion-button.first {
-  border-top: 1px solid #393953;
-}
-
-.accordion-flush .accordion-item .accordion-button.last {
-  border-bottom: 1px solid #393953;
-}
-
-.accordion-button:not(.collapsed)::after {
-  background-image: none;
-  content: "-";
-  font-size: 25px;
-  color: #6966ff;
-  transform: scale(1.1) translate(0, 0) !important;
-  transition: all 0.2s ease-in-out;
-}
-
-.accordion-button::after {
-  background-image: none;
-  content: "+";
-  font-size: 24px;
-  color: #fff;
-  transform: translate(0, 0) !important;
-  transition: all 0.2s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
