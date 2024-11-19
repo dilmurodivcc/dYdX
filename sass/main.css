@@ -479,8 +479,8 @@ button {
 }
 .second h2 {
   color: #fff;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 38px;
   line-height: 120%;
   letter-spacing: -0.02em;
   text-align: center;
@@ -667,6 +667,27 @@ button {
   color: #a59eba;
 }
 
+.second .oval {
+  position: absolute;
+  top: -9px;
+  right: -28px;
+}
+
+.acc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+.acc .acc-container {
+  max-width: 808px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -829,4 +850,92 @@ button {
 ::-webkit-scrollbar-thumb {
   background-color: #6966ff;
   border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #1c1c28;
+  color: #c8c7d8;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
+.accordion-flush .accordion-item {
+  border-top: 0 !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  width: 808px;
+  border-bottom: 1px solid #393953;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+  background-color: transparent !important;
+  font-weight: 450 !important;
+  font-size: 18px !important;
+  line-height: 133% !important;
+  letter-spacing: -0.01em !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  height: 75px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.accordion-flush .accordion-item .accordion-button.first {
+  border-top: 1px solid #393953;
+}
+
+.accordion-flush .accordion-item .accordion-button.last {
+  border-bottom: 1px solid #393953;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: "-";
+  font-size: 25px;
+  color: #6966ff;
+  transform: scale(1.1) translate(0, 0) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-button::after {
+  background-image: none;
+  content: "+";
+  font-size: 24px;
+  color: #fff;
+  transform: translate(0, 0) !important;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
