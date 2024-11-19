@@ -7,6 +7,10 @@
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -23,6 +27,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }
 
 * {
@@ -34,6 +48,10 @@ button {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -50,6 +68,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }
 
 .primary-btn {
@@ -85,6 +113,10 @@ a {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -101,6 +133,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }
 
 header {
@@ -125,6 +167,10 @@ header nav {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -141,6 +187,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }
 
 * {
@@ -152,6 +208,10 @@ button {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -168,6 +228,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }
 
 * {
@@ -179,6 +249,10 @@ button {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -195,6 +269,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }
 
 * {
@@ -206,6 +290,10 @@ button {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -222,6 +310,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }
 
 * {
@@ -233,6 +331,10 @@ button {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -249,6 +351,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }
 
 * {
@@ -260,6 +372,10 @@ button {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -276,6 +392,16 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }
 
 .hero {
@@ -343,6 +469,204 @@ button {
   color: #c8c7d8;
 }
 
+.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+.second h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-top: 60px;
+  position: relative;
+}
+.second p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #c8c7d8;
+  padding: 16px 0 24px;
+}
+.second a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #6966ff;
+}
+.second .v-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.second .sparkle {
+  position: absolute;
+  right: -55px;
+  top: -35px;
+}
+
+.third {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.third .slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  max-width: 100%;
+}
+.third .cards-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 20px;
+  padding: 20px;
+}
+.third .cards-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.third .card {
+  background-color: #393953;
+  padding: 20px;
+  border-radius: 16px;
+  width: 400px;
+  height: 600px;
+  flex: 0 0 auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+  position: relative;
+  border: 1px solid #393953;
+}
+
+.third .card h3 {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #a59eba;
+}
+.third .card h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.third .card b {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #a59eba;
+}
+.third .card p {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+.third .avatars {
+  display: flex;
+  gap: 5px;
+}
+.third .avatars img {
+  width: 90px;
+  height: 40px;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+}
+
+.third .nav-btn {
+  background-color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  color: #1a1a2e;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.third .prev-btn {
+  left: -20px;
+}
+.third .next-btn {
+  right: 20px;
+}
+.third .something {
+  height: 188px;
+  width: 100%;
+  border-radius: 16px;
+  background-color: #232334;
+}
+
+.second .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+  margin: 80px 0;
+}
+.second .content .card {
+  background-color: #393953;
+  padding-bottom: 20px;
+  border-radius: 16px;
+}
+.second .content h3 {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: start;
+  margin: 20px 0 10px 20px !important;
+  color: #a59eba;
+}
+.second .content h2 {
+  text-align: start;
+  margin: 10px 0 70px 20px !important;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.second .content b {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  text-align: start;
+  margin: 0 0 20px 20px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #a59eba;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -352,6 +676,10 @@ button {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -370,6 +698,16 @@ button {
   cursor: pointer;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -379,6 +717,10 @@ button {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -397,6 +739,16 @@ button {
   cursor: pointer;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -406,6 +758,10 @@ button {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -424,6 +780,16 @@ button {
   cursor: pointer;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -433,6 +799,10 @@ button {
 .container {
   max-width: 1230px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -449,4 +819,14 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */
