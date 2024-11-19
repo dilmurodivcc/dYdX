@@ -145,6 +145,12 @@ button {
   cursor: pointer;
 }
 
+.section-1 {
+  width: 100vw;
+  height: 20vh;
+  background-color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
