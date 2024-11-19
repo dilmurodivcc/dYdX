@@ -28,12 +28,11 @@ button {
   cursor: pointer;
 }
 
-::-webkit-scrollbar{
-    width: 15px;
-    background-color: $background-primary;
-
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: $background-primary;
 }
-::-webkit-scrollbar-thumb{
-    background-color: $accent-brand;
-    border-radius: 5px;
+::-webkit-scrollbar-thumb {
+  background-color: $accent-brand;
+  border-radius: 5px;
 }
