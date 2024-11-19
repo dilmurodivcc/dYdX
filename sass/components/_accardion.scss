@@ -32,7 +32,7 @@
   font-size: 25px;
   color: $accent-brand;
   transform: scale(1.1) translate(0, 0) !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .accordion-button::after {
   background-image: none;
@@ -40,5 +40,5 @@
   font-size: 24px;
   color: $base-white;
   transform: translate(0, 0) !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
