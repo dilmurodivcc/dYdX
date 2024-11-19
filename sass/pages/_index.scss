@@ -42,6 +42,7 @@
     align-items: center;
     justify-content: center;
     gap: 150px;
+    flex-wrap: wrap;
     margin-top: 90px;
   }
   .column {
@@ -368,4 +369,12 @@
     right: 328px;
     z-index: 3;
   }
+}
+
+
+.primary-btn.mob{
+  display: none;
+}
+h1.mob{
+  display: none;
 }

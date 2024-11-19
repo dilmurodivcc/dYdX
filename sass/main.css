@@ -17,6 +17,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -58,6 +59,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -107,6 +109,10 @@ a {
   font-size: 16px;
   line-height: 150%;
   color: #c8c7d8;
+}
+
+.active {
+  color: #fff !important;
 }
 
 #backToTopBtn {
@@ -162,6 +168,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -250,6 +257,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -328,6 +336,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -362,6 +371,11 @@ header nav {
   align-items: center;
   gap: 28px;
 }
+header .links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
 
 * {
   margin: 0;
@@ -382,6 +396,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -481,6 +496,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -763,6 +779,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -804,6 +821,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -1364,6 +1382,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -1405,6 +1424,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -1467,6 +1487,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 150px;
+  flex-wrap: wrap;
   margin-top: 90px;
 }
 .hero .column {
@@ -1784,6 +1805,14 @@ button {
   z-index: 3;
 }
 
+.primary-btn.mob {
+  display: none;
+}
+
+h1.mob {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1803,6 +1832,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -1844,6 +1874,160 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .container {
+    max-width: 90vw !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .links {
+    display: none !important;
+  }
+  .primary-btn {
+    display: none !important;
+  }
+  .primary-btn.mob {
+    display: block !important;
+  }
+  h1 {
+    display: none !important;
+  }
+  h1.mob {
+    display: block !important;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+  }
+  .hero {
+    height: auto !important;
+  }
+  h2 {
+    font-size: 24px !important;
+    line-height: 133% !important;
+    letter-spacing: -0.02em !important;
+  }
+  p {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+    letter-spacing: -0.01em;
+  }
+  .third .card {
+    width: 280px !important;
+  }
+  .third .card .something {
+    height: 130px !important;
+  }
+  .second .content {
+    flex-wrap: wrap;
+    width: 280px !important;
+  }
+  .oval {
+    top: -4px !important;
+    right: -18px !important;
+    width: 140px;
+  }
+  .accordion-flush .accordion-item {
+    width: 300px !important;
+  }
+  .accordion-flush .accordion-item .mini {
+    font-size: 16px !important;
+    display: flex;
+    gap: 50px;
+  }
+  .cards .container {
+    flex-wrap: wrap;
+    gap: 15px !important;
+  }
+  .cards .cardd {
+    width: 300px !important;
+    height: 340px !important;
+  }
+  .cards .arrow {
+    top: 280px !important;
+    left: 60px !important;
+    transform: rotate(90deg) !important;
+  }
+  .cards .arrow2 {
+    bottom: 300px !important;
+    left: 20px !important;
+    transform: rotate(90deg) !important;
+  }
+  .blue-content {
+    width: 90% !important;
+    height: 280px !important;
+  }
+  .primary-btn.white {
+    display: block !important;
+  }
+  footer {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+  footer .container {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+  footer .left {
+    flex-direction: column !important;
+    align-items: start !important;
+    margin-bottom: 40px !important;
+  }
+  footer nav {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #1c1c28;
+  color: #c8c7d8;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -1885,6 +2069,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -1926,6 +2111,7 @@ body {
   background-color: #1c1c28;
   color: #c8c7d8;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 a {

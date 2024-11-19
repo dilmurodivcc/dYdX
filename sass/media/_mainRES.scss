@@ -2,16 +2,119 @@
 @import "../utils/mixing";
 @import "../base/reset";
 
-
-
 @media (max-width: 480px) {
-    .card {
-        min-width: 250px;
-        max-width: 250px;
-        padding: 15px;
-    }
+  body {
+    overflow-x: hidden !important;
+  }
+  .container {
+    max-width: 90vw !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .nav-btn {
-        font-size: 1.2rem;
+  .links {
+    display: none !important;
+  }
+  .primary-btn {
+    display: none !important;
+  }
+  .primary-btn.mob {
+    display: block !important;
+  }
+  h1 {
+    display: none !important;
+  }
+  h1.mob {
+    display: block !important;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+  }
+  .hero {
+    height: auto !important;
+  }
+  h2 {
+    font-size: 24px !important;
+    line-height: 133% !important;
+    letter-spacing: -0.02em !important;
+  }
+  p {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+    letter-spacing: -0.01em;
+  }
+  .third .card {
+    width: 280px !important;
+    .something {
+      height: 130px !important;
     }
+  }
+  .second {
+    .content {
+      flex-wrap: wrap;
+      width: 280px !important;
+    }
+  }
+  .oval {
+    top: -4px !important;
+    right: -18px !important;
+    width: 140px;
+  }
+  .accordion-flush .accordion-item {
+    width: 300px !important;
+    .mini {
+      font-size: 16px !important;
+      display: flex;
+      gap: 50px;
+    }
+  }
+  .cards {
+    .container {
+      flex-wrap: wrap;
+      gap: 15px !important;
+    }
+    .cardd {
+      width: 300px !important;
+      height: 340px !important;
+    }
+    .arrow {
+      top: 280px !important;
+      left: 60px !important;
+      transform: rotate(90deg) !important;
+    }
+    .arrow2 {
+      bottom: 300px !important;
+      left: 20px !important;
+      transform: rotate(90deg) !important;
+    }
+  }
+  .blue-content {
+    width: 90% !important;
+    height: 280px !important;
+  }
+  .primary-btn.white {
+    display: block !important;
+  }
+  footer{
+    flex-direction: column !important;
+    align-items: start !important;
+    .container{
+      flex-direction: column !important;
+      align-items: start !important;
+    }
+    .left{
+      flex-direction: column !important;
+      align-items: start !important;
+      margin-bottom: 40px !important;
+    }
+    nav{
+      flex-direction: column !important;
+      align-items: start !important;
+    }
+  }
 }
