@@ -27,3 +27,35 @@ a {
   line-height: 150%;
   color: $text-icon-secondary;
 }
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: $accent-brand;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.tutun {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: $accent-brand;
+  border-radius: 100%;
+  pointer-events: none;
+  filter: blur(8px);
+  opacity: 0.9;
+  transition: transform 0.3s, opacity 0.5s;
+  z-index: 100;
+}

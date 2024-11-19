@@ -109,6 +109,40 @@ a {
   color: #c8c7d8;
 }
 
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #6966ff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.tutun {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #6966ff;
+  border-radius: 100%;
+  pointer-events: none;
+  filter: blur(8px);
+  opacity: 0.9;
+  transition: transform 0.3s, opacity 0.5s;
+  z-index: 100;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -400,7 +434,8 @@ footer a {
   display: flex;
   gap: 8px;
 }
-footer .grid-bck {
+
+.grid-bck {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -408,6 +443,20 @@ footer .grid-bck {
   height: 792px;
   z-index: -1;
   background-image: url(../../assets/images/grid-top-reverse.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 792px;
+  z-index: -1;
+  background-image: url(../../assets/images/grid-top-reverse.svg);
+  transform: rotate(180deg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -526,6 +575,15 @@ button {
   cursor: pointer;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
 
 .section-1 {
   display: flex;
@@ -561,7 +619,6 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-image: url(../assets/images/oq-0.svg);
   align-items: center;
   width: 100%;
 }
@@ -795,9 +852,6 @@ body {
 .More {
   width: 100vw;
   display: flex;
-  background-image: url(../assets/images/oq-0.svg);
-  background-position: center;
-  background-size: cover;
   margin-top: 100px;
   align-items: center;
   justify-content: center;
@@ -808,7 +862,6 @@ body {
   align-items: center;
   justify-content: center;
   width: 50%;
-  background-color: black;
 }
 .More .more h2 {
   font-size: 25px;
@@ -1051,17 +1104,6 @@ body {
     background-color: #e6dada;
   }
 }
-=======
-::-webkit-scrollbar {
-  width: 15px;
-  background-color: #1c1c28;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #6966ff;
-  border-radius: 5px;
-}
-
 * {
   margin: 0;
   padding: 0;
