@@ -42,3 +42,29 @@
     color: $base-white;
   }
 }
+@media screen and (max-width: 480px) {
+  .blue-content {
+    width: 90% !important;
+    height: 280px !important;
+  }
+  .primary-btn.white {
+    display: block !important;
+  }
+  footer{
+    flex-direction: column !important;
+    align-items: start !important;
+    .container{
+      flex-direction: column !important;
+      align-items: start !important;
+    }
+    .left{
+      flex-direction: column !important;
+      align-items: start !important;
+      margin-bottom: 40px !important;
+    }
+    nav{
+      flex-direction: column !important;
+      align-items: start !important;
+    }
+  }
+}

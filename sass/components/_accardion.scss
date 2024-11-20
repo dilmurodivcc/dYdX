@@ -42,3 +42,13 @@
   transform: translate(0, 0) !important;
   transition: all 0.2s ease-in-out;
 }
+@media screen and (max-width: 480px) {
+  .accordion-flush .accordion-item {
+    width: 300px !important;
+    .mini {
+      font-size: 16px !important;
+      display: flex;
+      gap: 50px;
+    }
+  }
+}

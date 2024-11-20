@@ -238,6 +238,16 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 480px) {
+  .accordion-flush .accordion-item {
+    width: 300px !important;
+  }
+  .accordion-flush .accordion-item .mini {
+    font-size: 16px !important;
+    display: flex;
+    gap: 50px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -317,6 +327,32 @@ button {
   color: #fff;
 }
 
+@media screen and (max-width: 480px) {
+  .blue-content {
+    width: 90% !important;
+    height: 280px !important;
+  }
+  .primary-btn.white {
+    display: block !important;
+  }
+  footer {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+  footer .container {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+  footer .left {
+    flex-direction: column !important;
+    align-items: start !important;
+    margin-bottom: 40px !important;
+  }
+  footer nav {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -1855,48 +1891,6 @@ button {
   border-radius: 5px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1230px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-body {
-  background-color: #1c1c28;
-  color: #c8c7d8;
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden !important;
-}
-
-a {
-  text-decoration: none;
-}
-
-button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-::-webkit-scrollbar {
-  width: 15px;
-  background-color: #1c1c28;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #6966ff;
-  border-radius: 5px;
-}
-
 @media (max-width: 480px) {
   body {
     overflow-x: hidden !important;
@@ -2132,4 +2126,140 @@ button {
 ::-webkit-scrollbar-thumb {
   background-color: #6966ff;
   border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #1c1c28;
+  color: #c8c7d8;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #1c1c28;
+  color: #c8c7d8;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
+.hero {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+}
+
+h1 {
+  font-size: 60px !important;
+}
+
+.acc.blog {
+  display: flex;
+  flex-direction: column !important;
+  align-items: start !important;
+  justify-content: start !important;
+  gap: 80px;
+}
+.acc.blog h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-align: start;
+  display: block;
+}
+.acc.blog .acc-container {
+  align-items: start;
+  gap: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 90vw !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .links {
+    display: none !important;
+  }
+  .primary-btn {
+    display: none !important;
+  }
+  .primary-btn.mob {
+    display: block !important;
+  }
 }/*# sourceMappingURL=main.css.map */
