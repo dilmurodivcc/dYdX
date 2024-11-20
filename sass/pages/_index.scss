@@ -42,6 +42,7 @@
     align-items: center;
     justify-content: center;
     gap: 150px;
+    flex-wrap: wrap;
     margin-top: 90px;
   }
   .column {
@@ -324,7 +325,7 @@
     gap: 10px;
     position: relative;
     border: 1px solid $background-secondary;
-    h2 {
+    h2 , modalh2   {
       font-family: $third-family;
       font-weight: 400;
       font-size: 64px;
@@ -368,4 +369,12 @@
     right: 328px;
     z-index: 3;
   }
+}
+
+
+.primary-btn.mob{
+  display: none;
+}
+h1.mob{
+  display: none;
 }

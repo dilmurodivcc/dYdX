@@ -52,3 +52,42 @@ document.addEventListener("mousemove", (e) => {
     smoke.remove();
   }, 550);
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  const closeBtn = document.querySelector('.close-btn');
+
+  menuToggle.addEventListener('click', function () {
+    navLinks.style.display = 'flex'; // Show the menu
+  });
+
+  closeBtn.addEventListener('click', function () {
+    navLinks.style.display = 'none'; // Hide the menu
+  });
+});
+// Elementlarni tanlash
+const menuButton = document.getElementById('menu-button');
+const fullScreenMenu = document.getElementById('full-screen-menu');
+const closeMenuButton = document.getElementById('close-menu');
+
+// Menyu ochish
+menuButton.addEventListener('click', () => {
+    fullScreenMenu.classList.add('active');
+    document.body.style.overflow = 'hidden'; 
+});
+
+closeMenuButton.addEventListener('click', () => {
+    fullScreenMenu.classList.remove('active');
+    document.body.style.overflow = 'auto';
+});
+AOS.init();
+function login() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  if (email && password) {
+    alert("Your apply has been accepted 🎉");
+  } else {
+    alert("Fill in all the inputs");
+  }
+}
