@@ -34,7 +34,6 @@ body{
   position: relative;
   display: flex;
   flex-direction: column;
-  background-image: url(../assets/images/oq-0.svg);
   align-items: center;
   width: 100%;
   .chaos{
@@ -258,9 +257,7 @@ margin-bottom: 15px;
 .More{
   width: 100vw;
   display: flex;
-  background-image: url(../assets/images/oq-0.svg);
-  background-position: center;
-  background-size: cover;
+
   margin-top: 100px;
   align-items: center;
   justify-content: center;
@@ -271,7 +268,6 @@ margin-bottom: 15px;
       justify-content: center;
       width: 50%;
   
-      background-color:black;
       h2{
           font-size: 25px;
           color: #FFFFFF;
