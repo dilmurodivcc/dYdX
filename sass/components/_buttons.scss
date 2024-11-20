@@ -16,6 +16,10 @@
 .primary-btn.gray{
   background-color: $background-secondary !important;
 }
+.primary-btn.white{
+  background-color: $base-white !important;
+  color: $accent-brand !important;
+}
 a {
   font-family: $second-family;
   font-weight: 400;
