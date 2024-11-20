@@ -80,3 +80,4 @@ closeMenuButton.addEventListener('click', () => {
     fullScreenMenu.classList.remove('active');
     document.body.style.overflow = 'auto';
 });
+AOS.init();
