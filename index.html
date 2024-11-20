@@ -32,8 +32,69 @@
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content position-relative"
+          style="padding: 40px 35px; border-radius: 15px; width: 440px"
+        >
+          <div class="modal-header border-0">
+            <h2 class="modal-title fs-3" style="color: #6966ff;" id="loginModalLabel">
+              Apply For Grand
+            </h2>
+            <button
+              type="button "
+              class="btn-close shadow-none position-absolute"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="top: 20px; right: 20px"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control shadow-none"
+                  id="email"
+                  placeholder="  E-mail"
+                  required
+                  style="width: 340px; border-radius: 10px"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="number"
+                  class="form-control shadow-none"
+                  id="password"
+                  placeholder=" Number"
+                  required
+                  style="width: 340px; border-radius: 10px"
+                />
+              </div>
 
+              <button
+                type="button shadow-none"
+                class="btn btn-success btn-scs"
+                style="width: 340px; background-color: #6966ff;"
+                onclick="login()"
+              >
+                Войти
+              </button>
+            </form>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
     <section class="hero">
       <header>
         <img src="./assets/icons/logoMain.svg" alt="" />
@@ -45,8 +106,26 @@
             <a href="./pages/blog.html">Blog</a>
             <a href="./pages/blog.html">FAQ</a>
           </div>
-          <button class="primary-btn">Apply for grant</button>
-          <button class="primary-btn mob">Apply</button>
+          <button
+            class="primary-btn"
+            data-bs-toggle="modal"
+            href="#exampleModalToggle"
+            role="button"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            Apply for grant
+          </button>
+          <button
+            class="primary-btn mob"
+            data-bs-toggle="modal"
+            href="#exampleModalToggle"
+            role="button"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            Apply
+          </button>
           <button id="menu-button" class="menu-button">
             <img src="./assets/icons/fi_menu.svg" alt="" />
           </button>
@@ -74,7 +153,7 @@
         </div>
       </div>
       <div class="hero-content">
-        <h1  data-aos="flip-up">
+        <h1 data-aos="flip-up">
           Powering the future of <br />
           dYdX through <br />
           community grants
@@ -103,7 +182,7 @@
           </button>
         </div>
       </div>
-      <div  data-aos="flip-up" class="line">
+      <div data-aos="flip-up" class="line">
         <div class="column">
           <b>100+ </b>
           <p>projects funded</p>
@@ -119,9 +198,8 @@
       </div>
     </section>
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
     <div class="container">
-      <section class="second"  data-aos="flip-up">
+      <section class="second" data-aos="flip-up">
         <img src="./assets/icons/Down arrow.svg" alt="" />
         <h2>Projects built with grants</h2>
         <p>
@@ -135,7 +213,6 @@
       </section>
     </div>
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
     <section class="third">
       <div class="slider-container">
         <button style="display: none" class="nav-btn prev-btn">&lt;</button>
@@ -170,7 +247,7 @@
               <img src="./assets/icons/avatar@.svg" alt="" />
             </div>
           </div>
-          <div class="card" >
+          <div class="card">
             <h3>Entry</h3>
             <h2>Rewards optimization research and paper</h2>
             <b>Funding amount: $6,000 - $8,000</b>
@@ -241,8 +318,7 @@
       </div>
     </section>
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-    <section class="second"  data-aos="flip-up">
+    <section class="second" data-aos="flip-up">
       <h2>
         What’s new?
 
@@ -276,8 +352,7 @@
       </div>
     </section>
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
-    <section class="second"  data-aos="flip-up">
+    <section class="second" data-aos="flip-up">
       <h2>
         Frequently asked questions
         <img class="oval" src="./assets/icons/1.svg" alt="" />
@@ -288,7 +363,6 @@
       </p>
     </section>
     <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
-
     <section class="acc">
       <div class="acc-container">
         <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -563,7 +637,7 @@
       </section>
     </div>
     <footer>
-      <div class="grid-bck"  data-aos="flip-up"></div>
+      <div class="grid-bck" data-aos="flip-up"></div>
       <div class="container">
         <div class="left">
           <img src="./assets/images/masterAvatar.svg" alt="" />
@@ -587,7 +661,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
     <button id="backToTopBtn">
       <i><i class="fa-solid fa-arrow-up"></i></i>
     </button>
@@ -598,7 +672,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="./script.js"></script>
   </body>
 </html>

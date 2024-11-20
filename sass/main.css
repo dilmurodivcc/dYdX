@@ -2138,7 +2138,7 @@ button {
   position: relative;
   border: 1px solid #393953;
 }
-.cards .container .cardd h2 {
+.cards .container .cardd h2, .cards .container .cardd modalh2 {
   font-family: "Nanum Pen Script", cursive;
   font-weight: 400;
   font-size: 64px;
@@ -2603,4 +2603,45 @@ h1 {
   .primary-btn.mob {
     display: block !important;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #1c1c28;
+  color: #c8c7d8;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */

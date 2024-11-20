@@ -19,6 +19,67 @@
     <link rel="stylesheet" href="../sass/main.css" />
   </head>
   <body>
+    <div
+    class="modal fade"
+    id="loginModal"
+    tabindex="-1"
+    aria-labelledby="loginModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div
+        class="modal-content position-relative"
+        style="padding: 40px 35px; border-radius: 15px; width: 440px"
+      >
+        <div class="modal-header border-0">
+          <h2 class="modal-title fs-3" style="color: #6966ff;" id="loginModalLabel">
+            Apply For Grand
+          </h2>
+          <button
+            type="button "
+            class="btn-close shadow-none position-absolute"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            style="top: 20px; right: 20px"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control shadow-none"
+                id="email"
+                placeholder="  E-mail"
+                required
+                style="width: 340px; border-radius: 10px"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="number"
+                class="form-control shadow-none"
+                id="password"
+                placeholder=" Number"
+                required
+                style="width: 340px; border-radius: 10px"
+              />
+            </div>
+
+            <button
+              type="button shadow-none"
+              class="btn btn-success btn-scs"
+              style="width: 340px; background-color: #6966ff;"
+              onclick="login()"
+            >
+              Войти
+            </button>
+          </form>
+        </div>
+      
+      </div>
+    </div>
+  </div>
     <div class="overlay"></div>
     <section class="section-1">
       <header>
