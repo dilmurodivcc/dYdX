@@ -1,0 +1,54 @@
+@import "../utils/variables";
+@import "../utils/mixing";
+@import "../base/reset";
+.accordion-flush .accordion-item {
+  border-top: 0 !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  width: 808px;
+  border-bottom: 1px solid $background-secondary;
+}
+.accordion-flush .accordion-item .accordion-button {
+  background-color: transparent !important;
+  font-weight: 450 !important;
+  font-size: 18px !important;
+  line-height: 133% !important;
+  letter-spacing: -0.01em !important;
+  color: $base-white !important;
+  box-shadow: none !important;
+  height: 75px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.accordion-flush .accordion-item .accordion-button.first {
+  border-top: 1px solid $background-secondary;
+}
+.accordion-flush .accordion-item .accordion-button.last {
+  border-bottom: 1px solid $background-secondary;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: "-";
+  font-size: 25px;
+  color: $accent-brand;
+  transform: scale(1.1) translate(0, 0) !important;
+  transition: all 0.2s ease-in-out;
+}
+.accordion-button::after {
+  background-image: none;
+  content: "+";
+  font-size: 24px;
+  color: $base-white;
+  transform: translate(0, 0) !important;
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 480px) {
+  .accordion-flush .accordion-item {
+    width: 300px !important;
+    .mini {
+      font-size: 16px !important;
+      display: flex;
+      gap: 50px;
+    }
+  }
+}

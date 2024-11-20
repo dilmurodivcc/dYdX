@@ -2,15 +2,20 @@
 @import "../utils/mixing";
 @import "../base/reset";
 
-header{
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 31px;
+  width: 100%;
+  nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 24px 31px;
-    width: 100%;
-    nav{
-        display: flex;
-        align-items: center;
-        gap: 28px;
-    }
+    gap: 28px;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
 }

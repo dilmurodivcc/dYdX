@@ -2,10 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dYdX</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
@@ -18,17 +31,22 @@
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <!-- HOME Page -->
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
     <section class="hero">
       <header>
         <img src="./assets/icons/logoMain.svg" alt="" />
         <nav>
-          <a href="#">Discover initiatives</a>
-          <a href="./pages/funded.html">Funded grants</a>
-          <a href="#">Program expenses</a>
-          <a href="#">Blog</a>
-          <a href="#">FAQ</a>
+
+          <div class="links" >
+            <a href="./pages/discover.html">Discover initiatives</a>
+            <a href="./pages/funded.html">Funded grants</a>
+            <a href="./pages/program.html">Program expenses</a>
+            <a href="./pages/blog.html">Blog</a>
+            <a href="./pages/faq.html">FAQ</a>
+          </div>
           <button class="primary-btn">Apply for grant</button>
+          <button class="primary-btn mob">Apply</button>
         </nav>
       </header>
       <div class="hero-content">
@@ -36,6 +54,11 @@
           Powering the future of <br />
           dYdX through <br />
           community grants
+        </h1>
+        <h1 class="mob">
+          Powering the <br>future of 
+          dYdX <br> through <br />
+          community <br> grants
         </h1>
         <div class="btns-line">
           <button style="padding: 12px 40px" class="primary-btn gray">
@@ -70,6 +93,8 @@
         </div>
       </div>
     </section>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
     <div class="container">
       <section class="second">
         <img src="./assets/icons/Down arrow.svg" alt="" />
@@ -84,6 +109,8 @@
         </div>
       </section>
     </div>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
     <section class="third">
       <div class="slider-container">
         <button style="display: none" class="nav-btn prev-btn">&lt;</button>
@@ -188,6 +215,8 @@
         </button>
       </div>
     </section>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
     <section class="second">
       <h2>
         What’s new?
@@ -221,6 +250,329 @@
         </div>
       </div>
     </section>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+    <section class="second">
+      <h2>
+        Frequently asked questions
+        <img class="oval" src="./assets/icons/1.svg" alt="" />
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla
+        risus, <br />consectetur ut bibendum non, gravida non libero.
+      </p>
+    </section>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+
+    <section class="acc">
+      <div class="acc-container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed first mini"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                How do I apply?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                first item's accordion body.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed mini"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Can I apply as a U.S. based person/company?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                second item's accordion body. Let's imagine this being filled
+                with some actual content.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed mini"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                How will I be compensated?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                third item's accordion body. Nothing more exciting happening
+                here in terms of content, but just filling up the space to make
+                it look, at least at first glance, a bit more representative of
+                how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed mini"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                What type of project will qualify for a Grant?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                first item's accordion body.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button
+                class="accordion-button collapsed mini"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                What is the application timeline? When can I expect to hear
+                back?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                second item's accordion body. Let's imagine this being filled
+                with some actual content.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+              <button
+                class="accordion-button collapsed mini"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSix"
+                aria-expanded="false"
+                aria-controls="flush-collapseSix"
+              >
+                How can I increase my chances of getting funded?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSix"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                third item's accordion body. Nothing more exciting happening
+                here in terms of content, but just filling up the space to make
+                it look, at least at first glance, a bit more representative of
+                how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSeven">
+              <button
+                class="accordion-button collapsed last mini"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseSeven"
+                aria-expanded="false"
+                aria-controls="flush-collapseSeven"
+              >
+                How often do you approve new Rounds of funding?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingSeven"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Placeholder content for this accordion, which is intended to
+                demonstrate the <code>.accordion-flush</code> class. This is the
+                third item's accordion body. Nothing more exciting happening
+                here in terms of content, but just filling up the space to make
+                it look, at least at first glance, a bit more representative of
+                how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <section class="cards">
+      <div class="second">
+        <h2>
+          Application process
+          <img
+            class="traced"
+            src="./assets/icons/Group 8 (Traced).svg"
+            alt=""
+          />
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nulla
+          risus, <br />consectetur ut bibendum non, gravida non libero.
+        </p>
+      </div>
+      <div class="container">
+        <img
+          class="arrow"
+          src="./assets/images/Right arrow curved.svg"
+          alt=""
+        />
+        <img
+          class="arrow2"
+          src="./assets/images/Right arrow curved (1).svg"
+          alt=""
+        />
+        <div class="cardd">
+          <h2>1</h2>
+          <h3>Apply</h3>
+
+          <p>
+            Submit a complete application to the dYdX Grants Team including as
+            many details as possible about the proposed idea and their
+            background.
+          </p>
+        </div>
+
+        <div class="cardd">
+          <h2>2</h2>
+          <h3>Interview</h3>
+
+          <p>
+            If your application is selected, the dYdX Grants will conduct 1-2
+            interviews to collect more information on the Applicant's background
+            and the proposal.
+          </p>
+        </div>
+        <div class="cardd">
+          <h2>3</h2>
+          <h3>Grant offer</h3>
+
+          <p>
+            The dYdX Grants team will determine if the proposal fits into the
+            grant program. A vesting schedule and timeline for product
+            development reports will also be determined in the offer;
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <div class="container">
+      <section class="blue-content">
+        <div class="content">
+          <h4>Have a project in mind?</h4>
+          <h2>Let’s create something awesome.</h2>
+          <button class="primary-btn white">
+            Apply for grant
+            <img src="./assets/icons/fi_arrow-right (1).svg" alt="" />
+          </button>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="grid-bck"></div>
+      <div class="container">
+        <div class="left">
+          <img src="./assets/images/masterAvatar.svg" alt="" />
+          <nav>
+            <a href="./pages/discover.html">About</a>
+            <a href="./pages/funded.html">FAQ</a>
+            <a href="./pages/program.html">Brand assets</a>
+            <a href="./pages/with-img.html"
+              >dYdX Foundation
+              <img src="./assets/icons/fi_external-link.svg" alt=""
+            /></a>
+            <a href="./index.html"
+              >dYdX trading
+              <img src="./assets/icons/fi_external-link.svg" alt=""
+            /></a>
+          </nav>
+        </div>
+        <div class="right">
+          <img src="./assets/images/Vector (12).svg" alt="" />
+          <img src="./assets/images/Group (10).svg" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <button id="backToTopBtn">
+      <i><i class="fa-solid fa-arrow-up"></i></i>
+    </button>
+    <!-- -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="./script.js"></script>
   </body>
 </html>

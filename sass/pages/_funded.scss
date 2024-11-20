@@ -3,271 +3,294 @@
 @import "../base/reset";
 
 
-.header {
-    text-align: center;
-    margin-bottom: 20px;
-    position: relative;
-    top: -480px;
+// .hero-content-funded {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+//     justify-content:center;
+//     gap: 40px;
+//     .funded-hero_check {
+//         display: flex;
+//         align-items: center;    
+//         position: absolute;
+//         top: 400px;
+//         left: 50px;
+//     }
+//     .funded-hero_nav {
+//         display: flex;
+//         justify-content: start;
+//         align-items: start;
+//         gap: 40px;
+//         position: relative;
+//         left: -250px;
+//         button {
+//             font-size: 14px;
+//             font-weight: 600;
+//             color: $base-white;
+//             border: none;
+//             background-color: $border-subtle;
+//             padding: 8px 16px;
+//             border-radius: 4px;
+//             cursor: pointer;
+//         }
+
+//         ul {
+//             display: flex;
+//             gap: 24px;
+//             list-style-type: none;
+
+//             li {
+//                 font-size: 16px;
+//                 font-weight: 600;
+//                 color: $text-icon-secondary;
+//                 text-decoration: none;
+//                 cursor: pointer;
+//                 font-family: $second-family;
+//             }
+//         }
+//     }
+// }
+
+
+.hero-funded {
+    width: 100%;
+    height: 400px;
+    background-image: url(../../assets/images/Grid\ -\ Top.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    @media (max-width: 320px) {
+        height: 300px; /* Balandlikni moslashtirish */
+        background-position: top; /* Fon pozitsiyasini o'zgartirish */
+    }
 }
 
-.all{
-    transition: all 1s ease;
-
-}
-
-.text {
-    position: relative;
-    top: -100px;
-}
-
-.rfp-list {
+.hero-content-funded {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-}
+    justify-content: center;
+    gap: 40px;
+    max-width: 1320px;
+    padding-left: 40px;
 
-.rfp-item {
-    width: 800px;
-    height: 144px;
-    margin: 0 auto;
-    background-color: #393953;
-    border-radius: 8px;
-    padding: 20px;
-    position: relative;
-    top: -450px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: relative;
-    transition: all 1s ease;
-}
-
-.img{
-    display: none;
-}
-
-.rfp-item {
-    span {
-        position: absolute;
-        right: 20px;
-        top: 15px;
-    }
-}
-
-.rfp-item {
-    h3 {
-        width: 643px;
-        height: 32px;
-        font-weight: 700;
+    h1 {
         font-size: 24px;
-        margin: 0 0 10px;
-        color: #FFFFFF;
-    }
-}
-
-.rfp-item {
-    p {
-        width: 643px;
-        height: 48px;
-        font-weight: 450;
-        font-size: 16px;
-        color: #FFFFFF;
-        margin: 5px 0;
-    }
-
-
-}
-
-.rfp-item {
-    #p{
-        width: 322px;
-        height: 24px;
-        color: #C8C7D8;
-        font-size: 16px;
-        font-weight: 400;
-    }
-}
-    .status {
         font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .status.funded {
-        width: 85px;
-        height: 32px;
-        border-radius: 100px;
-        color: white;
-        background-color: #1C1C28;
-        align-items: center;
+        color: $base-black;
         text-align: center;
-        justify-content: center;
-        align-content: center;
-        font-size: 16px;
-        font-weight: 450;
-    }
-
-    .status.open {
-        width: 72px;
-        height: 32px;
-        border-radius: 100px;
-        color: white;
-        background-color: #6966FF;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-        font-size: 16px;
-        font-weight: 450;
-    }
-
-    .text {
-        align-items: center;
-        align-content: center;
-        margin-left: 300px;
-        line-height: 25px;
-        h1{
-            width: 903px;
-            height: 72px;
-            font-weight: 700;
-            font-size: 60px;
-            color: #FFFFFF;
-        }
-
-        p{
-            width: 908px;
-            height: 48px;
-            font-size: 18px;
-            color: #C8C7D8;
+        margin: 0;
+        @media (max-width: 320px) {
+            font-size: 20px;
         }
     }
 
-    .status.completed {
-        width: 136px;
-        height: 32px;
-        border-radius: 100px;
-        background-color: #16B57F;
+    .funded-hero_nav {
+        display: flex;
         align-items: center;
-        text-align: center;
-        justify-content: center;
-        align-content: center;
-        color: white;
-        font-size: 16px;
-        font-weight: 450;
-    }
+        gap: 24px;
 
-    .all {
-        transition: all 1s ease;
+        button {
+            font-size: 14px;
+            font-weight: 600;
+            color: $base-white;
+            border: none;
+            background-color: $border-subtle;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: darken($border-subtle, 10%);
+            }
+
+            @media (max-width: 320px) {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
 
         ul {
             display: flex;
-            gap: 85px;
-            align-content: center;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            top: 55px;
-            left: 530px;
-            list-style: none;
-            border-radius: 10px;
+            gap: 25px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
 
-            li:hover {
-                width: 113px;
-                height: 43px;
-                background-color: 7px;
-                padding: 12px 16px;
-                background-color: #393953;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                border-radius: 10px;
-                transition: all 1s ease;
+
+            @media (max-width: 320px) {
+                flex-wrap: nowrap;
+                overflow-x: hidden;
+                gap: 10px;
             }
-        }
-    }
+            li {
+                font-size: 14px;
+                font-weight: 600;
+                color: $text-icon-secondary;
+                font-family: $second-family;
+                cursor: pointer;
+                text-align: center;
+                transition: all 0.3s ease;
 
-    @media (max-width:400px) {
-        .hero{
-            nav{
-                a{
-                    display: none;
+                &:hover {
+                    color: lighten($text-icon-secondary, 10%);
+                    transform: scale(1.1);
+                }
+
+                @media (max-width: 320px) {
+                    font-size: 12px;
                 }
             }
         }
+    }
 
-        .primary-btn{
-            width: 140px;
-            position: relative;
-            left: 20%;
+    .funded-hero_check {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+        @media (max-width: 320px) {
+            gap: 5px;
         }
+        .form-check {
+            display: flex;
+            align-items: center;
 
-        .img{
-            position: relative;
-            left: 10%;
-        }
+            .form-check-label {
+                font-size: 14px;
+                font-weight: 500;
+                color: $text-icon-secondary;
+                margin-left: 8px;
+                cursor: pointer;
 
-        .text{
-            margin-left: -20%;
-
-            h1{
-                font-size: 25px;
-                margin-left: -180px;
-                position: relative;
-                top: 20px;
+                @media (max-width: 320px) {
+                    font-size: 12px;
+                }
             }
-
-            p{
-                width: 400px;
-                font-size: 15px;
-                margin-left: 70px;
-            }
-        }
-
-        .img{
-            display: inline-block;
-        }
-
-        .all{
-            ul{
-                    position: absolute;
-                    left:35px;
-                    display: flex;
-                    gap: 35px;
-                    align-items: center;
-                    align-content: center;
-                    margin-top: 20px;
-            }
-        }
-
-        .rfp-item{
-            width: 380px;
-            height: 220px;
-        }
-
-        .rfp-item p{
-            width: 390px; 
-        }
-
-        .rfp-item #p{
-            margin-top: 10%;
-        }
-
-        .status.funded {
-            position: absolute;
-            left: 20px;
-            top: 180px;
-        }
-
-        body{
-            overflow-x: hidden;
-        }
-
-        .status.open{
-            position: absolute;
-            left: 20px;
-            top: 180px;
-        }
-
-        .status.completed {
-            position: absolute;
-            left: 20px;
-            top: 180px;
         }
     }
+}
+
+.funded-cards {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0 auto;
+
+
+    @media (max-width: 320px) {
+        justify-content: center;
+    }
+    .funded-cards_container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .funded-cards_wrapper {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            transition: all 0.3s ease;
+
+            @media (max-width: 320px) {
+                gap: 10px;
+            }
+            .card {
+                background-color: $background-secondary;
+                padding: 15px;
+                border-radius: 16px;
+                width: 380px;
+                height: 500px;
+                display: flex;
+                flex-wrap: wrap;
+
+                @media (max-width: 320px) {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-items: start;
+                    width: 300px;
+                    height: 440px;
+                    padding: 10px; 
+                }
+            }
+
+        }
+    }
+
+    h3 {
+        font-size: 18px;
+        font-family: $second-family;
+        font-weight: 400;
+        color: $text-icon-tertiary;
+
+        @media (max-width: 320px) {
+            text-align: start;
+            font-size: 16px; 
+        }
+    }
+
+    h2 {
+        font-weight: 500;
+        color: $base-white;
+        font-size: 30px;
+
+        @media (max-width: 320px) {
+            font-size: 24px;
+            text-align: start;
+        }
+    }
+
+    b {
+        font-size: 16px;
+        font-weight: 100;
+        color: $text-icon-tertiary;
+        font-family: $second-family;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        color: $base-white;
+        font-family: $font-family;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 20px;
+        letter-spacing: 1.1%;
+        @media (max-width: 320px) {
+            font-size: 14px; 
+            line-height: 18px; 
+        }
+    }
+    h3, h2, b, p {
+        @media (max-width: 320px) {
+            text-align: start;
+        }
+    }
+    .avatars img {
+        width: 90px;
+        height: 40px;
+        position: absolute;
+        left: 20px;
+        bottom: 25px;
+        @media (max-width: 320px) {
+            // width: 60px;
+            // height: 40px;
+        }
+      }
+    .nothing {
+        height: 150px;
+        width: 100%;
+        border-radius: 16px;
+        background-color: #232334;
+
+        @media (max-width: 320px) {
+            height: 100px; /* Element balandligini qisqartirish */
+        }
+    }
+}

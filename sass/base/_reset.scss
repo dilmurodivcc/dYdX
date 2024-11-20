@@ -18,6 +18,8 @@ body {
   background-color: $background-primary;
   color: $text-icon-secondary;
   font-family: $font-family;
+  overflow-x: hidden !important;
+
 }
 a {
   text-decoration: none;
