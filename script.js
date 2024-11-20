@@ -81,3 +81,13 @@ closeMenuButton.addEventListener('click', () => {
     document.body.style.overflow = 'auto';
 });
 AOS.init();
+function login() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  if (email && password) {
+    alert("Your apply has been accepted 🎉");
+  } else {
+    alert("Fill in all the inputs");
+  }
+}
