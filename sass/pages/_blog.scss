@@ -26,30 +26,29 @@ h1 {
     text-align: start;
     display: block;
   }
-  .acc-container{
+  .acc-container {
     align-items: start;
     gap: 40px;
   }
 }
 
 @media screen and (max-width: 480px) {
-    .container {
-        max-width: 90vw !important;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    
-      .links {
-        display: none !important;
-      }
-      .primary-btn {
-        display: none !important;
-      }
-      .primary-btn.mob {
-        display: block !important;
-      }
-    
+  .container {
+    max-width: 90vw !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links {
+    display: none !important;
+  }
+  .primary-btn {
+    display: none !important;
+  }
+  .primary-btn.mob {
+    display: block !important;
+  }
 }
