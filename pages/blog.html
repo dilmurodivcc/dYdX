@@ -52,15 +52,42 @@
             <img src="../assets/icons/logoMain.svg" alt=""
           /></a>
           <nav>
-            <a href="../pages/discover.html">Discover initiatives</a>
-            <a href="../pages/funded.html">Funded grants</a>
-            <a href="../pages/program.html">Program expenses</a>
-            <a style="color: #fff" href="../pages/with-img.html">Blog</a>
-            <a href="../pages/with-img.html">FAQ</a>
+            <div class="links">
+                
+                <a href="../pages/discover.html">Discover initiatives</a>
+                <a href="../pages/funded.html">Funded grants</a>
+                <a href="../pages/program.html">Program expenses</a>
+                <a style="color: #fff" href="../pages/with-img.html">Blog</a>
+                <a href="../pages/with-img.html">FAQ</a>
+            </div>
             <button class="primary-btn">Apply for grant</button>
+            <button class="primary-btn mob">Apply</button>
+            <button id="menu-button" class="menu-button">
+              <img src="../assets/icons/fi_menu.svg" alt="" />
+            </button>
           </nav>
         </header>
-
+        <div id="full-screen-menu" class="full-screen-menu">
+            <button id="close-menu" class="close-menu">
+              <img src="../assets/icons/fi_x.svg" alt="" />
+              <button class="primary-btn mob">Apply</button>
+            </button>
+    
+            <div class="menu-content">
+              <img class="icon-menu" src="../assets/icons/logoMain.svg" alt="" />
+              <ul class="menu-list">
+                <li><a href="../pages/discover.html">Discover initiatives</a></li>
+                <li><a href="../pages/funded.html">Funded grants</a></li>
+                <li><a href="../pages/program.html">Program expenses</a></li>
+                <li><a href="../pages/blog.html">Blog</a></li>
+                <li><a href="../pages/blog">FAQ</a></li>
+              </ul>
+              <div class="social">
+                <img src="../assets/images/Vector (12).svg" alt="" />
+                <img src="../assets/images/Group (10).svg" alt="" />
+              </div>
+            </div>
+          </div>
         <h1>Frequently asked questions</h1>
       </section>
 
@@ -714,6 +741,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"
       ></script>
+      <script src="../script.js"></script>
     </body>
   </html>
 </html>

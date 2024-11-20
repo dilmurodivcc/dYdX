@@ -19,3 +19,102 @@ header {
     gap: 28px;
   }
 }
+.menu-button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+.icon-menu {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+.full-screen-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $background-secondary;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  .primary-btn.mob {
+    position: absolute;
+    top: 48px;
+    right: 80px;
+  }
+}
+
+.full-screen-menu.active {
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 70px;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.menu-list li {
+  margin: 10px 0;
+}
+
+.menu-list a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  text-align: center;
+  color: $base-white;
+}
+
+/* Yopish tugmasi */
+.close-menu {
+  position: absolute;
+  top: 55px;
+  right: 30px;
+  background: none;
+  color: #fff;
+  border: none;
+
+  cursor: pointer;
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-button {
+    display: none;
+  }
+}
