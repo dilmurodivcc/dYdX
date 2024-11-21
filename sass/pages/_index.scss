@@ -199,6 +199,16 @@
     bottom: 25px;
   }
 }
+.second{
+  .content{
+    .card{
+      padding: 0 !important;
+      height: auto !important;
+    width: auto 
+    ;
+    }
+  }
+}
 .third {
   .nav-btn {
     background-color: $base-white;
