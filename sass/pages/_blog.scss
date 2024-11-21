@@ -31,6 +31,34 @@ h1 {
     gap: 40px;
   }
 }
+.sort {
+  gap: 40px !important;
+  margin-top: 80px;
+  .sorter {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+    color: $text-icon-secondary;
+    background-color: transparent;
+    gap: 35px !important;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  .active {
+    background: $background-secondary;
+    border-radius: 7px;
+    padding: 12px 16px;
+ 
+    font-size: 16px;
+    &:hover{
+      box-shadow: 0 0 8px #353535 !important;
+      transform: none !important;
+    }
+  }
+}
 .second.blog {
   .content {
     display: flex;
