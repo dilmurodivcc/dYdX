@@ -103,6 +103,11 @@ button {
   color: #6966ff !important;
 }
 
+.primary-btn.mob {
+  width: auto !important;
+  left: 80px !important;
+}
+
 a {
   font-family: "Space Mono", monospace;
   font-weight: 400;
@@ -412,6 +417,12 @@ header .links {
   align-items: center;
   gap: 28px;
 }
+header .links a {
+  transition: all 0.3s ease-in-out;
+}
+header .links a:hover {
+  color: #fff !important;
+}
 
 .menu-button {
   background-color: transparent;
@@ -493,6 +504,7 @@ header .links {
   line-height: 120%;
   text-align: center;
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Yopish tugmasi */
@@ -660,10 +672,6 @@ button {
 .hero-funded {
   width: 100%;
   height: 400px;
-  background-image: url(../../assets/images/Grid\ -\ Top.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   align-items: start;
   justify-content: start;
@@ -671,8 +679,8 @@ button {
 }
 @media (max-width: 320px) {
   .hero-funded {
-    height: 300px; /* Balandlikni moslashtirish */
-    background-position: top; /* Fon pozitsiyasini o'zgartirish */
+    height: 300px;
+    background-position: top;
   }
 }
 
@@ -1782,6 +1790,73 @@ button {
   border-radius: 5px;
 }
 
+.program {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 810px;
+  margin: 80px auto;
+}
+.program .main-card {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  height: auto;
+  padding: 24px;
+  background-color: #393953;
+  border-radius: 16px;
+}
+.program .first-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.program .price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.program .price img {
+  width: 24px;
+}
+
+.main-card h3 {
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.05px;
+  color: #fff;
+}
+.main-card small {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #c8c7d8;
+}
+.main-card p {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin: 0 !important;
+}
+.main-card b {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1827,10 +1902,6 @@ button {
 .hero {
   width: 100%;
   height: 792px;
-  background-image: url(../../assets/images/Grid\ -\ Top.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -2583,6 +2654,183 @@ h1 {
 .acc.blog .acc-container {
   align-items: start;
   gap: 40px;
+}
+
+.sort {
+  gap: 40px !important;
+  margin-top: 80px;
+}
+.sort .sorter {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 0.01em;
+  color: #c8c7d8;
+  background-color: transparent;
+  gap: 35px !important;
+  transition: all 0.3s ease-in-out;
+}
+.sort .sorter:hover {
+  transform: scale(1.02);
+}
+.sort .active {
+  background: #393953;
+  border-radius: 7px;
+  padding: 12px 16px;
+  font-size: 16px;
+}
+.sort .active:hover {
+  box-shadow: 0 0 8px #353535 !important;
+  transform: none !important;
+}
+
+.second.blog .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px !important;
+}
+.second.blog .line {
+  padding-bottom: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.second.blog .card {
+  padding-bottom: 0 !important;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 90vw !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .links {
+    display: none !important;
+  }
+  .primary-btn {
+    display: none !important;
+  }
+  .primary-btn.mob {
+    display: block !important;
+  }
+  .second.blog .card {
+    width: 300px !important;
+    height: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 90vw !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .links {
+    display: none !important;
+  }
+  .primary-btn {
+    display: none !important;
+  }
+  .primary-btn.mob {
+    display: block !important;
+  }
+  .second.blog .card {
+    width: 320px !important;
+    height: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .second.blog .card {
+    width: 280px !important;
+    height: auto;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #1c1c28;
+  color: #c8c7d8;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
+.hero {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+}
+
+h1 {
+  font-size: 60px !important;
+}
+
+.acc.blog {
+  display: flex;
+  flex-direction: column !important;
+  align-items: start !important;
+  justify-content: start !important;
+  gap: 80px;
+}
+.acc.blog h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-align: start;
+  display: block;
+}
+.acc.blog .acc-container {
+  align-items: start;
+  gap: 40px;
+}
+
+.accordion-body p {
+  color: #c8c7d8 !important;
 }
 
 @media screen and (max-width: 480px) {

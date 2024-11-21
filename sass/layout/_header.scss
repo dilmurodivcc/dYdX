@@ -17,6 +17,12 @@ header {
     display: flex;
     align-items: center;
     gap: 28px;
+    a{
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        color: $text-icon-primary !important ;
+      }
+    }
   }
 }
 .menu-button {
@@ -95,6 +101,7 @@ header {
   line-height: 120%;
   text-align: center;
   color: $base-white;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Yopish tugmasi */
