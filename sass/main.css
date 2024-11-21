@@ -417,6 +417,12 @@ header .links {
   align-items: center;
   gap: 28px;
 }
+header .links a {
+  transition: all 0.3s ease-in-out;
+}
+header .links a:hover {
+  color: #fff !important;
+}
 
 .menu-button {
   background-color: transparent;
@@ -498,6 +504,7 @@ header .links {
   line-height: 120%;
   text-align: center;
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Yopish tugmasi */
@@ -1783,6 +1790,73 @@ button {
   border-radius: 5px;
 }
 
+.program {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 810px;
+  margin: 80px auto;
+}
+.program .main-card {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  height: auto;
+  padding: 24px;
+  background-color: #393953;
+  border-radius: 16px;
+}
+.program .first-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.program .price {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.program .price img {
+  width: 24px;
+}
+
+.main-card h3 {
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.05px;
+  color: #fff;
+}
+.main-card small {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #c8c7d8;
+}
+.main-card p {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin: 0 !important;
+}
+.main-card b {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2582,6 +2656,34 @@ h1 {
   gap: 40px;
 }
 
+.sort {
+  gap: 40px !important;
+  margin-top: 80px;
+}
+.sort .sorter {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 0.01em;
+  color: #c8c7d8;
+  background-color: transparent;
+  gap: 35px !important;
+  transition: all 0.3s ease-in-out;
+}
+.sort .sorter:hover {
+  transform: scale(1.02);
+}
+.sort .active {
+  background: #393953;
+  border-radius: 7px;
+  padding: 12px 16px;
+  font-size: 16px;
+}
+.sort .active:hover {
+  box-shadow: 0 0 8px #353535 !important;
+  transform: none !important;
+}
+
 .second.blog .content {
   display: flex;
   flex-direction: column;
@@ -2729,36 +2831,6 @@ h1 {
 
 .accordion-body p {
   color: #c8c7d8 !important;
-}
-
-.sort {
-  gap: 40px !important;
-  margin-top: 80px;
-}
-.sort .sorter {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 133%;
-  letter-spacing: 0.01em;
-  color: #c8c7d8;
-  background-color: transparent;
-  gap: 35px !important;
-  transition: all 0.3s ease-in-out;
-}
-.sort .sorter:hover {
-  transform: scale(1.02);
-}
-.sort .active {
-  background: #393953;
-  border-radius: 7px;
-  padding: 12px 16px;
-  width: 77px;
-  height: 48px;
-  font-size: 16px;
-}
-.sort .active:hover {
-  box-shadow: 0 0 8px #353535 !important;
-  transform: none !important;
 }
 
 @media screen and (max-width: 480px) {
