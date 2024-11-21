@@ -1,3 +1,57 @@
 @import "../utils/variables";
 @import "../utils/mixing";
 @import "../base/reset";
+.hero {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto !important;
+}
+h1 {
+  font-size: 60px !important;
+}
+
+.acc.blog {
+  display: flex;
+  flex-direction: column !important;
+  align-items: start !important;
+  justify-content: start !important;
+  gap: 80px;
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: $base-white;
+    text-align: start;
+    display: block;
+  }
+  .acc-container {
+    align-items: start;
+    gap: 40px;
+  }
+}
+.accordion-body p {
+  color: #c8c7d8 !important;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 90vw !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links {
+    display: none !important;
+  }
+  .primary-btn {
+    display: none !important;
+  }
+  .primary-btn.mob {
+    display: block !important;
+  }
+}

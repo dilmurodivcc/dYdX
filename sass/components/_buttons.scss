@@ -20,6 +20,10 @@
   background-color: $base-white !important;
   color: $accent-brand !important;
 }
+.primary-btn.mob{
+  width: auto !important;
+  left: 80px !important;
+}
 a {
   font-family: $second-family;
   font-weight: 400;

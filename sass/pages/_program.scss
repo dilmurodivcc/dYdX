@@ -1,3 +1,72 @@
 @import "../utils/variables";
 @import "../utils/mixing";
 @import "../base/reset";
+
+.program {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 810px;
+  margin: 80px auto;
+
+  .main-card {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    background-color: $background-secondary;
+    border-radius: 16px;
+  }
+  .first-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .price{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    img{
+        width: 24px;
+    }
+  }
+}
+.main-card {
+  h3 {
+    font-weight: 550;
+    font-size:20px;
+    line-height: 120%;
+    letter-spacing: 0.05px;
+    color: $base-white;
+  }
+  small {
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $text-icon-secondary;
+  }
+  p {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: $base-white;
+    margin: 0 !important;
+  }
+  b{
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $base-white
+  }
+}

@@ -31,7 +31,54 @@ h1 {
     gap: 40px;
   }
 }
-
+.sort {
+  gap: 40px !important;
+  margin-top: 80px;
+  .sorter {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+    color: $text-icon-secondary;
+    background-color: transparent;
+    gap: 35px !important;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  .active {
+    background: $background-secondary;
+    border-radius: 7px;
+    padding: 12px 16px;
+ 
+    font-size: 16px;
+    &:hover{
+      box-shadow: 0 0 8px #353535 !important;
+      transform: none !important;
+    }
+  }
+}
+.second.blog {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px !important;
+  }
+  .line {
+    padding-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding-bottom: 0 !important;
+  }
+}
 @media screen and (max-width: 480px) {
   .container {
     max-width: 90vw !important;
@@ -50,5 +97,45 @@ h1 {
   }
   .primary-btn.mob {
     display: block !important;
+  }
+  .second.blog {
+    .card {
+      width: 300px !important;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 90vw !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links {
+    display: none !important;
+  }
+  .primary-btn {
+    display: none !important;
+  }
+  .primary-btn.mob {
+    display: block !important;
+  }
+  .second.blog {
+    .card {
+      width: 320px !important;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .second.blog {
+    .card {
+      width: 280px !important;
+      height: auto;
+    }
   }
 }
