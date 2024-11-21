@@ -31,7 +31,26 @@ h1 {
     gap: 40px;
   }
 }
-
+.second.blog {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px !important;
+  }
+  .line {
+    padding-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .card {
+    padding-bottom: 0 !important;
+  }
+}
 @media screen and (max-width: 480px) {
   .container {
     max-width: 90vw !important;
@@ -50,5 +69,45 @@ h1 {
   }
   .primary-btn.mob {
     display: block !important;
+  }
+  .second.blog {
+    .card {
+      width: 300px !important;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    max-width: 90vw !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links {
+    display: none !important;
+  }
+  .primary-btn {
+    display: none !important;
+  }
+  .primary-btn.mob {
+    display: block !important;
+  }
+  .second.blog {
+    .card {
+      width: 320px !important;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .second.blog {
+    .card {
+      width: 280px !important;
+      height: auto;
+    }
   }
 }

@@ -11,6 +11,12 @@
       rel="stylesheet"
     />
     <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+    <link
       rel="shortcut icon"
       href="../assets/icons/logo.svg"
       type="image/x-icon"
@@ -84,6 +90,8 @@
       </div>
     </div>
   </div>
+  <div class="overlay"></div>
+
     <section class="hero-funded">
       <header>
         <a href="../index.html">
@@ -97,10 +105,28 @@
             >
             <a href="../pages/program.html">Program expenses</a>
             <a href="../pages/blog.html">Blog</a>
-            <a href="../pages/blog.html">FAQ</a>
+            <a href="../pages/faq.html">FAQ</a>
           </div>
-          <button class="primary-btn">Apply for grant</button>
-          <button class="primary-btn mob">Apply</button>
+          <button
+          class="primary-btn"
+          data-bs-toggle="modal"
+          href="#exampleModalToggle"
+          role="button"
+          data-bs-toggle="modal"
+          data-bs-target="#loginModal"
+        >
+          Apply for grant
+        </button>
+        <button
+          class="primary-btn mob"
+          data-bs-toggle="modal"
+          href="#exampleModalToggle"
+          role="button"
+          data-bs-toggle="modal"
+          data-bs-target="#loginModal"
+        >
+          Apply
+        </button>
           <button id="menu-button" class="menu-button">
             <img src="../assets/icons/fi_menu.svg" alt="" />
           </button>
@@ -119,7 +145,7 @@
             <li><a href="../pages/funded.html">Funded grants</a></li>
             <li><a href="../pages/program.html">Program expenses</a></li>
             <li><a href="../pages/blog.html">Blog</a></li>
-            <li><a href="../pages/blog">FAQ</a></li>
+            <li><a href="../pages/faq.html">FAQ</a></li>
           </ul>
           <div class="social">
             <img src="../assets/images/Vector (12).svg" alt="" />
@@ -347,6 +373,11 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="../script.js"></script>
