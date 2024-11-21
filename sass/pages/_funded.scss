@@ -169,6 +169,11 @@
         }
     }
 }
+.avatars{
+    position: absolute;
+    left: 0 !important;
+    bottom: 0 !important;
+}
 
 .funded-cards {
     display: flex;
@@ -189,6 +194,7 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            justify-content: start;
             flex-wrap: wrap;
             transition: all 0.3s ease;
 
@@ -203,6 +209,7 @@
                 height: 500px;
                 display: flex;
                 flex-wrap: wrap;
+                position: relative;
 
                 @media (max-width: 320px) {
                     display: flex;
@@ -267,16 +274,13 @@
             text-align: start;
         }
     }
-    .avatars img {
+    .avatars {
         width: 90px;
         height: 40px;
         position: absolute;
-        left: 20px;
-        bottom: 25px;
-        @media (max-width: 320px) {
-            // width: 60px;
-            // height: 40px;
-        }
+        left: 0;
+        bottom: 0;
+        
       }
     .nothing {
         height: 150px;
