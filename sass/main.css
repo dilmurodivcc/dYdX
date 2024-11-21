@@ -2892,4 +2892,369 @@ button {
 ::-webkit-scrollbar-thumb {
   background-color: #6966ff;
   border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: #1c1c28;
+  color: #c8c7d8;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #1c1c28;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6966ff;
+  border-radius: 5px;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.spotlight {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.spotlight .spot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url(../assets/images/oq-0.svg);
+}
+.spotlight .spot .spott {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  height: 100%;
+}
+.spotlight .spot .spott h2 {
+  margin-top: 20px;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+}
+.spotlight .spot .spott p {
+  font-size: 18px;
+  color: rgb(200, 199, 216);
+  margin-top: 10px;
+}
+
+.latest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  margin-top: 80px;
+}
+.latest h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+}
+.latest .latest-0 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.latest .latest-0 .latest-1 {
+  position: relative;
+  width: 49%;
+  height: 40vh;
+  border-radius: 16px;
+}
+.latest .latest-0 .latest-1 h4 {
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+.latest .latest-0 .latest-2 {
+  width: 49%;
+  height: 40vh;
+  border-radius: 16px;
+}
+
+.latest-3 {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 90%;
+  border-radius: 16px;
+  margin-top: 2px;
+  background-color: rgb(57, 57, 83);
+}
+.latest-3:hover {
+  background-color: rgb(42, 42, 64);
+  transition: all 0.4s;
+}
+.latest-3 .latest-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(28, 28, 45);
+  border-radius: 50%;
+}
+.latest-3 .latest-5 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 40%;
+  left: 31%;
+  width: 40%;
+  height: 20%;
+}
+.latest-3 .latest-5 b {
+  font-size: 40px;
+  color: white;
+}
+.latest-3 .latest-5 b span {
+  margin-left: -10px;
+  color: rgb(125, 125, 149);
+}
+.latest-3 .latest-5 p {
+  color: rgb(105, 102, 255);
+  font-size: 20px;
+  margin-top: -1px;
+  font-weight: 700;
+}
+
+.latset {
+  position: absolute;
+  z-index: 2;
+  right: 25%;
+  margin-top: -20px;
+}
+
+.latest-2 {
+  position: relative;
+}
+.latest-2 h4 {
+  position: absolute;
+  bottom: 0;
+  color: rgb(255, 255, 255);
+  left: 5px;
+}
+
+.latest-33 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 90%;
+  border-radius: 16px;
+  margin-top: 2px;
+  background-color: rgb(218, 214, 214);
+  cursor: pointer;
+}
+.latest-33:hover {
+  background-color: rgb(173, 165, 165);
+  transition: all 0.4s;
+}
+.latest-33 .latest-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(28, 28, 45);
+  border-radius: 50%;
+}
+.latest-33 .latest-5 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 40%;
+  left: 31%;
+  width: 40%;
+  height: 20%;
+}
+.latest-33 .latest-5 b {
+  font-size: 40px;
+  color: black;
+}
+.latest-33 .latest-5 b span {
+  margin-left: -10px;
+  color: rgb(125, 125, 149);
+}
+.latest-33 .latest-5 p {
+  color: rgb(105, 102, 255);
+  font-size: 20px;
+  margin-top: -5px;
+  font-weight: 700;
+}
+
+.avat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.avat h2 {
+  font-size: 30px;
+  color: white;
+}
+
+.avtar {
+  display: flex;
+  width: 100%;
+  height: 35vh;
+  align-items: center;
+  justify-content: space-between;
+}
+.avtar .avtar-0 {
+  position: relative;
+  width: 30%;
+  height: 100%;
+}
+.avtar .avtar-0 p {
+  position: absolute;
+  bottom: 0;
+  color: rgb(255, 255, 255);
+}
+
+.avtar-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 87%;
+  border-radius: 16px;
+  cursor: pointer;
+  background-color: white;
+}
+.avtar-1:hover {
+  background-color: rgb(207, 207, 218);
+  transition: all 0.4s;
+}
+.avtar-1 .avtar-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.latest-44 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(57, 57, 83);
+  border-radius: 50%;
+}
+
+.guidelines {
+  width: 100%;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+}
+.guidelines b {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.guidelines p {
+  margin-top: 15px;
+  font-weight: 400;
+  color: rgb(200, 199, 216);
+}
+
+@media screen and (max-width: 480px) {
+  .latest {
+    width: 100%;
+  }
+  .latest-0 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .avtar {
+    flex-direction: column;
+    height: 110vh;
+  }
+  .avtar .avtar-0 {
+    width: 50%;
+  }
+  .guidelines {
+    width: 50%;
+    text-align: center;
+  }
+  .latest-33 .latest-5 {
+    justify-content: center;
+    top: 40%;
+    left: 31%;
+    width: 40%;
+    height: 20%;
+  }
+  .latest-33 .latest-5 b {
+    font-size: 30px;
+  }
+  .latest-3 .latest-5 {
+    top: 40%;
+    left: 31%;
+    width: 40%;
+    height: 20%;
+  }
+  .latest-3 .latest-5 b {
+    font-size: 30px;
+  }
+  .latset {
+    position: absolute;
+    z-index: 2;
+    right: 3%;
+    margin-top: -20px;
+  }
 }/*# sourceMappingURL=main.css.map */
