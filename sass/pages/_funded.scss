@@ -64,8 +64,8 @@
     justify-content: start;
     flex-direction: column;
     @media (max-width: 320px) {
-        height: 300px; /* Balandlikni moslashtirish */
-        background-position: top; /* Fon pozitsiyasini o'zgartirish */
+        height: 300px;
+        background-position: top;
     }
 }
 
