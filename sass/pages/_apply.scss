@@ -1,0 +1,73 @@
+@import "../utils/variables";
+@import "../utils/mixing";
+@import "../base/reset";
+
+.acc-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: $base-white;
+}
+.acc-p {
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: -0.01em;
+}
+.grand {
+  width: 810px !important;
+  h2 {
+    font-size: 40px;
+    margin: 80px 0 32px 0;
+  }
+}
+
+.form-container {
+  width: 100%;
+  padding: 60px 80px;
+  background-color: #fafafa;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  .acc-p {
+    color: #555;
+    margin: 20px 0;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+  }
+
+  textarea {
+    height: 100px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 133%;
+
+  color: $base-black;
+}
+
+.required {
+  color: red;
+}
